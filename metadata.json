@@ -1,0 +1,6 @@
+{
+  "name": "जनता की राय",
+  "description": "उत्तर प्रदेश की सभी 403 विधानसभाओं के लिए सरल और सुरक्षित जनमत सर्वेक्षण ऐप",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

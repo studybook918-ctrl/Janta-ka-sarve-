@@ -1,0 +1,72 @@
+{
+  "entities": {
+    "District": {
+      "title": "District",
+      "description": "Administrative district of Uttar Pradesh",
+      "type": "object",
+      "properties": {
+        "districtId": { "type": "string" },
+        "districtName": { "type": "string" },
+        "districtNameEn": { "type": "string" },
+        "isActive": { "type": "boolean" }
+      },
+      "required": ["districtId", "districtName", "isActive"]
+    },
+    "Constituency": {
+      "title": "Constituency",
+      "description": "Vidhan Sabha constituency in UP",
+      "type": "object",
+      "properties": {
+        "constituencyId": { "type": "string" },
+        "constituencyNumber": { "type": "integer" },
+        "constituencyName": { "type": "string" },
+        "constituencyNameEn": { "type": "string" },
+        "districtId": { "type": "string" },
+        "districtName": { "type": "string" },
+        "isActive": { "type": "boolean" }
+      },
+      "required": ["constituencyId", "constituencyNumber", "constituencyName", "districtId", "isActive"]
+    },
+    "Survey": {
+      "title": "Survey",
+      "description": "Survey for an assembly seat",
+      "type": "object",
+      "properties": {
+        "surveyId": { "type": "string" },
+        "constituencyId": { "type": "string" },
+        "title": { "type": "string" },
+        "status": { "type": "string" },
+        "totalResponses": { "type": "integer" }
+      },
+      "required": ["surveyId", "constituencyId", "title", "status"]
+    },
+    "Candidate": {
+      "title": "Candidate",
+      "description": "Candidate contesting in the survey",
+      "type": "object",
+      "properties": {
+        "candidateId": { "type": "string" },
+        "constituencyId": { "type": "string" },
+        "candidateName": { "type": "string" },
+        "partyName": { "type": "string" },
+        "symbolName": { "type": "string" },
+        "serialNumber": { "type": "integer" }
+      },
+      "required": ["candidateId", "constituencyId", "candidateName", "partyName", "serialNumber"]
+    },
+    "SurveyResponse": {
+      "title": "SurveyResponse",
+      "description": "User opinion response for a survey",
+      "type": "object",
+      "properties": {
+        "responseId": { "type": "string" },
+        "surveyId": { "type": "string" },
+        "userId": { "type": "string" },
+        "candidateId": { "type": "string" },
+        "constituencyId": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" }
+      },
+      "required": ["responseId", "surveyId", "userId", "candidateId", "constituencyId", "timestamp"]
+    }
+  }
+}

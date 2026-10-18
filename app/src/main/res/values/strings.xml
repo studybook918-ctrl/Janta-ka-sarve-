@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">जनता की राय</string>
+    <string name="app_subtitle">उत्तर प्रदेश जनमत सर्वेक्षण</string>
+    <string name="select_district">अपना जिला चुनें</string>
+    <string name="select_constituency">अपनी विधानसभा चुनें</string>
+    <string name="proceed">आगे बढ़ें</string>
+    <string name="evm_title">जनमत मतपत्र (EVM)</string>
+    <string name="disclaimer">महत्वपूर्ण: यह एक निष्पक्ष गैर-सरकारी जनमत सर्वेक्षण है, वास्तविक निर्वाचन मतदान नहीं।</string>
+</resources>
